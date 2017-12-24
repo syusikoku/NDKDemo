@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools"
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       tools:showIn="@layout/activity_main">
+
+    <Button
+            android:layout_width="match_parent"
+            android:id="@+id/btn_action_getdata_from_c"
+            android:text="获取C层返回的数据"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:id="@+id/btn_action_reflect_jfield"
+            android:text="C调用java中的public 非 static 字段"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:id="@+id/btn_action_reflect_static_jfield"
+            android:text="C调用java中的public static 字段"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:id="@+id/btn_action_reflect_private_jfield"
+            android:text="C访问一个 private 变量"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:id="@+id/btn_action_public_method"
+            android:text=" C 调用公有方法"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:id="@+id/btn_action_private_method"
+            android:text=" C 调用私有方法"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:id="@+id/btn_action_parent_method"
+            android:text=" C 调用父类方法"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:id="@+id/btn_action_intarr_param"
+            android:text="数组参数的传递"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:id="@+id/btn_action_obj_param"
+            android:text="自定义对象参数的传递"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:id="@+id/btn_action_objlist_param"
+            android:text="自定义对象的集合参数的传递"
+            android:layout_height="wrap_content"/>
+</merge>

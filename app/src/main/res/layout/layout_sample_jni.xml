@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools"
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+        <EditText
+                android:id="@+id/et_value1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="整数数据A"
+                android:inputType="numberSigned"
+                android:layout_height="match_parent"/>
+
+        <EditText
+                android:id="@+id/et_value2"
+                android:layout_width="0dp"
+                android:inputType="numberSigned"
+                android:layout_weight="1"
+                android:hint="整数数据B"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <Button
+            android:layout_width="match_parent"
+            android:id="@+id/btn_action_calc"
+            android:text="算术运算"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:text="数据加密"
+            android:id="@+id/btn_action_encode"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:text="数据解密"
+            android:id="@+id/btn_action_decode"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:text="图片压缩"
+            android:id="@+id/btn_action_piczip"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:text="视频编码"
+            android:id="@+id/btn_action_videodecode"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:text="视频解码"
+            android:id="@+id/btn_action_videoencode"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:text="文件合并"
+            android:id="@+id/btn_action_filezip"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:text="http请求-get"
+            android:id="@+id/btn_action_get_net_req"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:text="http请求-post"
+            android:id="@+id/btn_action_post_net_req"
+            android:layout_height="wrap_content"/>
+</merge>
