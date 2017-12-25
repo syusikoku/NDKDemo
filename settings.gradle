@@ -1,1 +1,1 @@
-include ':app', ':DynamicRegFunc'
+include ':ndk-basic', ':DynamicRegFunc'
