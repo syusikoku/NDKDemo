@@ -257,4 +257,3 @@ Java_com_example_nd_JNI_callUnInstallListener(JNIEnv *env, jobject obj, jint ver
     }
     env->ReleaseStringUTFChars(path, path_str);
 }
-
