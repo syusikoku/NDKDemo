@@ -1,12 +1,8 @@
 #include <jni.h>
 #include <string>
 #include <android/log.h>
-#include <sys/inotify.h>
 
 #define LOG_TAG "zy"
-
-#include <unistd.h>
-#include <malloc.h>
 
 #define LOGD(...) __android_log_print(ANDROID_LOG_DEBUG, LOG_TAG, __VA_ARGS__)
 #define LOGF(...) __android_log_print(ANDROID_LOG_DEBUG, LOG_TAG, __VA_ARGS__)
