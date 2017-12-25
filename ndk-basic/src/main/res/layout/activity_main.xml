@@ -30,27 +30,6 @@
 
             <include layout="@layout/layout_basic_jni"/>
 
-            <TextView
-                    android:layout_width="wrap_content"
-                    android:textSize="18sp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_height="wrap_content"
-                    android:text="NDK-示例"
-                    />
-
-            <TextView
-                    android:id="@+id/sample_text"
-                    android:layout_width="wrap_content"
-                    android:textSize="18sp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_height="wrap_content"
-                    android:text="示例2017"
-                    />
-
-            <include layout="@layout/layout_sample_jni"/>
-
         </LinearLayout>
     </ScrollView>
 

@@ -8,11 +8,7 @@ import java.util.ArrayList;
 
 public class JNI extends SuperJni {
 
-    public native String stringFromJNI();
-
     public native String getString();
-
-    public native int plus(int a, int b);
 
     /*卸载监听*/
     public native void callUnInstallListener(int versionSdk, String path);

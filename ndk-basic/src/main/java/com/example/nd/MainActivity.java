@@ -28,23 +28,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         /*卸载监听*/
         jni.callUnInstallListener(Build.VERSION.SDK_INT, "data/data/com.example.nd");
-
-        // Example of a call to a native method
-        TextView tv = (TextView) findViewById(R.id.sample_text);
-        tv.setText(jni.stringFromJNI());
-
         addListener();
     }
 
     private void addListener() {
-        findViewById(R.id.btn_action_calc).setOnClickListener(this);
         findViewById(R.id.btn_action_getdata_from_c).setOnClickListener(this);
-        findViewById(R.id.btn_action_decode).setOnClickListener(this);
-        findViewById(R.id.btn_action_encode).setOnClickListener(this);
-        findViewById(R.id.btn_action_videodecode).setOnClickListener(this);
-        findViewById(R.id.btn_action_videoencode).setOnClickListener(this);
-        findViewById(R.id.btn_action_piczip).setOnClickListener(this);
-        findViewById(R.id.btn_action_filezip).setOnClickListener(this);
         findViewById(R.id.btn_action_reflect_jfield).setOnClickListener(this);
         findViewById(R.id.btn_action_reflect_static_jfield).setOnClickListener(this);
         findViewById(R.id.btn_action_reflect_private_jfield).setOnClickListener(this);
@@ -59,28 +47,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btn_action_calc:
-                String calcResult = "相加的结果: " + jni.plus(15, 12) + "";
-                Log.e("test", calcResult);
-                Toast.makeText(this, calcResult, Toast.LENGTH_SHORT).show();
-                break;
             case R.id.btn_action_getdata_from_c:
                 String resultStr = jni.getString();
                 String msg = "C返回的数据: " + resultStr;
                 Log.e("test", msg);
                 Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.btn_action_encode:
-                break;
-            case R.id.btn_action_decode:
-                break;
-            case R.id.btn_action_videodecode:
-                break;
-            case R.id.btn_action_videoencode:
-                break;
-            case R.id.btn_action_piczip:
-                break;
-            case R.id.btn_action_filezip:
                 break;
             case R.id.btn_action_reflect_jfield:
                 int numValue = jni.add();
