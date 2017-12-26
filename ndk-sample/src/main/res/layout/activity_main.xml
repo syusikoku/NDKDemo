@@ -9,80 +9,93 @@
         android:orientation="vertical"
         tools:context="com.example.ndk.sample.MainActivity">
 
-    <LinearLayout
+    <ScrollView
             android:layout_width="match_parent"
-            android:orientation="horizontal"
             android:layout_height="wrap_content">
 
-        <EditText
-                android:id="@+id/et_value1"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:hint="整数数据A"
-                android:inputType="numberSigned"
-                android:layout_height="match_parent"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
 
-        <EditText
-                android:id="@+id/et_value2"
-                android:layout_width="0dp"
-                android:inputType="numberSigned"
-                android:layout_weight="1"
-                android:hint="整数数据B"
-                android:layout_height="match_parent"/>
-    </LinearLayout>
+            <TextView
+                    android:id="@+id/tv_desc"
+                    android:layout_width="match_parent"
+                    android:text="描述信息"
+                    android:layout_height="wrap_content"/>
 
-    <Button
-            android:layout_width="match_parent"
-            android:id="@+id/btn_action_calc"
-            android:text="算术运算"
-            android:layout_height="wrap_content"/>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_height="wrap_content">
 
-    <Button
-            android:layout_width="match_parent"
-            android:text="数据加密"
-            android:id="@+id/btn_action_encode"
-            android:layout_height="wrap_content"/>
+                <EditText
+                        android:id="@+id/et_value1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="整数数据A"
+                        android:inputType="numberSigned"
+                        android:layout_height="match_parent"/>
 
-    <Button
-            android:layout_width="match_parent"
-            android:text="数据解密"
-            android:id="@+id/btn_action_decode"
-            android:layout_height="wrap_content"/>
+                <EditText
+                        android:id="@+id/et_value2"
+                        android:layout_width="0dp"
+                        android:inputType="numberSigned"
+                        android:layout_weight="1"
+                        android:hint="整数数据B"
+                        android:layout_height="match_parent"/>
+            </LinearLayout>
 
-    <Button
-            android:layout_width="match_parent"
-            android:text="图片压缩"
-            android:id="@+id/btn_action_piczip"
-            android:layout_height="wrap_content"/>
+            <Button
+                    android:layout_width="match_parent"
+                    android:id="@+id/btn_action_calc"
+                    android:text="算术运算"
+                    android:layout_height="wrap_content"/>
 
-    <Button
-            android:layout_width="match_parent"
-            android:text="视频编码"
-            android:id="@+id/btn_action_videodecode"
-            android:layout_height="wrap_content"/>
+            <Button
+                    android:layout_width="match_parent"
+                    android:text="数据加密+解密"
+                    android:id="@+id/btn_action_edcode"
+                    android:layout_height="wrap_content"/>
 
-    <Button
-            android:layout_width="match_parent"
-            android:text="视频解码"
-            android:id="@+id/btn_action_videoencode"
-            android:layout_height="wrap_content"/>
+            <Button
+                    android:layout_width="match_parent"
+                    android:text="图片压缩"
+                    android:id="@+id/btn_action_piczip"
+                    android:layout_height="wrap_content"/>
 
-    <Button
-            android:layout_width="match_parent"
-            android:text="文件合并"
-            android:id="@+id/btn_action_filezip"
-            android:layout_height="wrap_content"/>
+            <Button
+                    android:layout_width="match_parent"
+                    android:text="视频编码"
+                    android:id="@+id/btn_action_videodecode"
+                    android:layout_height="wrap_content"/>
 
-    <Button
-            android:layout_width="match_parent"
-            android:text="http请求-get"
-            android:id="@+id/btn_action_get_net_req"
-            android:layout_height="wrap_content"/>
+            <Button
+                    android:layout_width="match_parent"
+                    android:text="视频解码"
+                    android:id="@+id/btn_action_videoencode"
+                    android:layout_height="wrap_content"/>
 
-    <Button
-            android:layout_width="match_parent"
-            android:text="http请求-post"
-            android:id="@+id/btn_action_post_net_req"
-            android:layout_height="wrap_content"/>
+            <Button
+                    android:layout_width="match_parent"
+                    android:text="文件合并"
+                    android:id="@+id/btn_action_filezip"
+                    android:layout_height="wrap_content"/>
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:text="http请求-get"
+                    android:id="@+id/btn_action_get_net_req"
+                    android:layout_height="wrap_content"/>
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:text="http请求-post"
+                    android:id="@+id/btn_action_post_net_req"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
